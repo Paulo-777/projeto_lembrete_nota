@@ -1,0 +1,56 @@
+<mat-expansion-panel hideToggle >
+    <mat-expansion-panel-header>
+
+        <mat-panel-title>
+            Novo Lembrete
+        </mat-panel-title>
+
+        <mat-panel-description>
+            Clique para criar um novo lembrete
+        </mat-panel-description>
+        <mat-icon style="size: 5px;">edit</mat-icon>
+
+
+    </mat-expansion-panel-header>
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Código do lembrete</mat-label>
+            <input matInput placeholder="Ex: 01">
+        </mat-form-field>
+    </form>
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Título</mat-label>
+            <input matInput placeholder="Ex: Academia">
+        </mat-form-field>
+    </form>
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Descrição</mat-label>
+            <textarea matInput placeholder="Malhar por 1 hora"></textarea>
+        </mat-form-field>
+    </form>
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Data do lembrete</mat-label>
+            <input type="date" matInput value="Automático">
+        </mat-form-field>
+    </form>
+
+    <div class="example-button">
+        <button mat-fab style="background-color: #5bba3d;" title="Adicionar lembrete">
+            <mat-icon class="material-icons">done</mat-icon>
+        </button>
+    </div>
+    <br>
+    <div class="example-button">
+        <button mat-fab color="warn" title="Limpar">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </div>
+
+</mat-expansion-panel>
